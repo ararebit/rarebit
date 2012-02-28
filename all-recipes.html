@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Rarebit Recipes | Helping you whip up something delicious from the dregs of your pantry and fridge</title>
+</head>
+<body>
+	<div id="header">
+    	<a class="logo" href="/recipes/">Rarebit Recipes</a>	
+        <form id="advancedSearch" method="get" action="/recipes/">
+        	<fieldset>
+            	<legend>Search Recipes</legend>
+                    <p>
+                        <label for="anyText">Any Text</label>
+                        <input type="text" name="q" id="anyText" />
+                    </p>
+                    <p>
+                        <label for="ingredient">Authorized Ingredients</label>
+                        <input type="text" name="i" id="ingredient" />
+                    </p>
+                    <p>
+                        <label for="publisher">Publisher</label>
+                        <input type="text" name="p" id="publisher" />
+                    </p>
+                    <p id="advsearchbutton">
+                        <input type="submit" value="Search" />
+                    </p>
+            </fieldset>
+      	</form>
+	</div>
+	<div id="content">
+    	<h1>All Recipes</h1>
+		<div id="recipe-cards">
+			<div id="recipe-card">
+				<a class="recipe-title" href="/recipe.html">Burrito Bananas Foster</a>
+                <a class="recipe-source" href="/recipe?p=all-recipes">AllRecipes.com</a>
+			</div>
+			<div id="recipe-card">
+				<a class="recipe-title" href="/recipe.html">Bunkhouse Beans</a>
+                <a class="recipe-source" href="/recipe?p=all-recipes">AllRecipes.com</a>
+			</div>
+            <div id="recipe-card">
+				<a class="recipe-title" href="/recipe.html">Carrots with Caramelized Ginger</a>
+                <a class="recipe-source" href="/recipe?p=bon-appetit">Bon Appetit</a>
+			</div>
+			<div id="recipe-card">
+				<a class="recipe-title" href="/recipe.html">Ginger Carrot Soup</a>
+                <a class="recipe-source" href="/recipe?p=cooks">Cooks.com</a>
+			</div>
+			<div id="recipe-card">
+				<a class="recipe-title" href="/recipe.html">Mushroom Risotto</a>
+                <a class="recipe-source" href="/recipe?p=epicurious">Epicurious</a>
+			</div>
+			<div id="recipe-card">
+				<a class="recipe-title" href="/recipe.html">Shrimp with Green Sauce</a>
+                <a class="recipe-source" href="/recipe?p=serious-eats">Serious Eats</a>
+			</div>
+            </div id="add-recipe-card">
+                <form id="add-recipe-card" method="post" action="/recipes/">
+                    <label for="add-recipe-card">Add recipe</label>
+                    <input type="text" />
+                    <input type="submit" value="submit" />
+                </form>
+        	</div>
+		</div>
+	</div>
+</body>
+</html>
