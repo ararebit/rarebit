@@ -1,1 +1,154 @@
-Hello world!
+# ID Attribute Values
+
+## header
+Applied to a DIV tag. A DIV with id="heade"r contains the logo and either the advanced search function for recipes or the search function for ingredients.
+
+## content
+Applied to a DIV tag. A DIV with id="content" contains everything in the BODY other than the header.
+
+## advancedSearch
+Applied to a FORM tag. A FORM with id="advancedSearch" provides an advanced search function for recipes. Contains a child FIELDSET tag which contains a child LEGEND tag which contains children INPUT tags (type="text" or type="submit") and children LABEL tags (type="anyText" or type="ingredient" or type="publisher") nested within paragraph elements.
+
+## advsearchbutton
+Applied to a P tag. Contains a child INPUT tag with type="submit".
+
+## ingredientSearch
+Applied to a FORM tag. Contains a child FIELDSET tag which contains a child LEGEND tag and children INPUT tags (type="text or type="submit").
+
+## comment-cards
+Applied to a DIV tag. Contains a child DIV tag with id="comment-card".
+
+## comment-card
+Applied to a DIV tag. Contains a child A tag with id="comment-title" and a child SPAN tag with class="comment-content".
+
+## add-comment-card
+Applied to a DIV tag or FORM tag or LABEL tag. When applied to DIV tag, contains a child FORM tag with id="add-comment-card". When applied to FORM tag, contains a child LABEL tag with form="add-comment-card" and children INPUT tags with type="text" or "type=submit". When applied to LABEL tag, for="add-comment-card".
+
+## ingredient-cards
+Applied to a DIV tag. Contains a child DIV tag with id="ingredient-card".
+
+## ingredient-card
+Applied to a DIV tag. Contains children A tags with class="recipes-with-ingredient" or class="authorized-ingredient".
+
+## add-ingredient-card
+Applied to a DIV tag or FORM tag or LABEL tag. When applied to DIV tag, contains a child FORM tag with id="add-ingredient-card". When applied to FORM tag, contains a child LABEL tag with form="add-ingredient-card" and children INPUT tags with type="text" or "type=submit". When applied to LABEL tag, for="add-ingredient-card".
+
+## anyText
+Applied to ID tag or LABEL tag indicating the kind of values that can be searched in an advanced search for recipes.
+
+## ingredient
+Applied to ID tag or LABEL tag indicating the kind of values that can be searched in an advanced search for recipes.
+
+## publisher
+Applied to ID tag or LABEL tag indicating the kind of values that can be searched in an advanced search for recipes.
+
+## recipe-cards
+Applied to ID tag or LABEL tag indicating the kind of values that can be searched in an advanced search for recipes.
+
+## recipe-card
+Applied to a DIV tag. Contains children A tags with class="recipe-title" or class="recipe-source".
+
+## add-recipe-card
+Applied to a DIV tag or FORM tag or LABEL tag. When applied to DIV tag, contains a child FORM tag with id="add-recipe-card". When applied to FORM tag, contains a child LABEL tag with form="add-recipe-card" and children INPUT tags with type="text" or "type=submit". When applied to LABEL tag, for="add-recipe-card".
+
+## delete
+Applied to a FORM tag. Most often contains children INPUT tags with type="checkbox" or type="submit". May also contain a list with multiple INPUT tags with type="checkbox" and one INPUT tag with type="submit".
+
+## alternate-names
+Applied to DIV tag. Contains an unordered list with LI tags with itemprop="ingredient-alt-name". Unordered list usually nested within a form to delete list items.
+
+## add-alternate-names
+Applied to a DIV tag. Contains FORM tag with id="ingredientSeach" which contains child INPUT tags with type="text" or type="submit".
+
+## source-ingredients
+Applied to a DIV tag. Child of DIV tag with class="ingredients-list". Contains child H2 tag and child unordered list.
+
+## authorized-ingredients
+Applied to a DIV tag. Child of DIV tag with class="ingredients-list". Contains child H2 tag and chld unordered list with list items with itemprop="ingredient."
+
+## update-recipe-card
+Applied to a DIV tag or FORM tag. When applied to DIV tag, contains a child FORM tag with id="add-recipe-card". When applied to FORM tag, contains children INPUT tags with type="text" or "type=submit".
+
+# Class Attribute Values
+
+## logo
+Applied to A tag located within DIV tag with id="header".
+
+## comment-title
+Applied to A tag. Child of DIV tag with id="comment-card".
+
+## comment-content
+Applied to SPAN tag. Child of DIV tag with id="comment-card".
+
+## recipes-with-ingredient
+Applied to A tag. Child of DIV tag with id="ingredient-card" or child of list item with itemprop="ingredient".
+
+## authorized-ingredient
+Applied to A tag. Child of DIV tag with id="ingredient-card" or child of list item with itemprop="ingredient".
+
+## recipe-title
+Applied to A tag. Child of DIV tag with id="recipe-card".
+
+## recipe-source
+Applied to A tag. Child of DIV tag with id="recipe-card".
+
+## comment-content
+Applied to SPAN tag. Child of DIV tag with id="comment-card".
+
+## recipe-publisher
+Applied to SPAN tag. Indicates link to website of original recipe publisher.
+
+## ingredients-list
+Applied to a DIV tag. Contains children DIV tag with id="source-ingredients" or id="authorized-ingredients".
+
+## hidden
+Applied to a DIV tag with id="source-ingredients". Once stylesheets are applied, this DIV tag will not display. Intended to store ingredients exactly as they appeared in the source before authority control was performed.
+
+## ingredient-amount
+Applied to SPAN tag. Child of list item with itemprop="ingredient".
+
+## ingredient-unit
+Applied to SPAN tag. Child of list item with itemprop="ingredient".
+
+# For Attribute Values
+
+## anyText
+Applied to LABEL tag nested within FORM tag with id="advancedSeach". Indicated that this field of the advanced search for recipes searches text strings.
+
+## ingredient
+Applied to LABEL tag nested within FORM tag with id="advancedSeach". Indicated that this field of the advanced search for recipes searches ingredients.
+
+## publisher
+Applied to LABEL tag nested within FORM tag with id="advancedSeach". Indicated that this field of the advanced search for recipes searches publishers.
+
+## add-comment-card
+Applied to FORM tag with id="add-comment-card" nested with DIV tag with id="add-comment-card".
+
+## add-ingredient-card
+Applied to FORM tag with id="add-ingredient-card" nested with DIV tag with id="add-ingredient-card".
+
+## add-recipe-card
+Applied to FORM tag with id="add-recipe-card" nested with DIV tag with id="add-recipe-card".
+
+# Name Attribute Values
+
+## q
+Applied to INPUT tag. When applied to INPUT, id attribute must equal "anyText" indicating that this field of the advanced search for recipes searches text strings.
+
+## i
+Applied to INPUT tag. When applied to INPUT, id attribute must equal "ingredient" indicating that this field of the advanced search for recipes searches ingredients.
+
+## p
+Applied to INPUT tag. When applied to INPUT, id attribute must equal "publisher" indicating that this field of the advanced search for recipes searches publishers.
+
+# Questions
+
+1. How can I determine whether to use id or class as elegantly as in the microblog example?
+
+2. Which tags or attribute values are needlessly redundant? All FOR attribute values?
+
+#Notes
+
+1. Separate out ranges of ingredients into two SPAN tags.
+
+2. Note allowable values. Assuming existence of some controlled vocabularies, e.g. for unit and food items.
